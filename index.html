@@ -16,34 +16,22 @@
         h1, h2, h3 {
             font-family: 'Libre+Baskerville', serif;
         }
-                .slide {
+        .slide {
             width: 100%;
             max-width: 1100px;
-            height: auto;
-            min-height: fit-content;
+            height: 700px;
             background: white;
-            margin: 20px auto;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            margin: 40px auto;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
             border: 1px solid #d1c7b7;
             position: relative;
-            border-radius: 16px;
             overflow: hidden;
-        }
-        @media (min-width: 768px) {
-            .slide {
-                margin: 40px auto;
-                height: 700px;
-                min-height: 700px;
-                border-radius: 0;
-                justify-content: center;
-            }
         }
         .image-placeholder {
             width: 100%;
-            height: 200px;
+            height: 400px;
             background-color: #e5e7eb;
             display: flex;
             align-items: center;
@@ -52,12 +40,6 @@
             border: 2px dashed #9ca3af;
             color: #6b7280;
             font-style: italic;
-            overflow: hidden;
-        }
-        @media (min-width: 768px) {
-            .image-placeholder {
-                height: 400px;
-            }
         }
         .ornament {
             position: absolute;
@@ -68,35 +50,35 @@
         .bottom-left { bottom: -20px; left: -20px; }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="p-8">
 
     <!-- SLAYT 1: KAPAK -->
-    <div class="slide p-6 md:p-16 flex items-center justify-center text-center">
+    <div class="slide p-16 flex items-center justify-center text-center">
         <div>
             <div class="text-amber-700 font-bold tracking-widest uppercase mb-4">Şehrin Gönül Rehberleri</div>
-            <h1 class="text-3xl md:text-4xl md:text-6xl text-slate-800 mb-8">Samsun'un Manevi Mimarları</h1>
+            <h1 class="text-6xl text-slate-800 mb-8">Samsun'un Manevi Mimarları</h1>
             <div class="w-24 h-1 bg-amber-600 mx-auto mb-8"></div>
-            <p class="text-lg md:text-xl text-slate-600 italic">" Seyyid Kutbiddin'den Şeyh Sadi'ye, Şehrin Tapu Senetleri"</p>
+            <p class="text-xl text-slate-600 italic">"İsa Baba'dan Seyyid Kutbiddin'e, Şehrin Tapu Senetleri"</p>
         </div>
     </div>
 
-    <!-- SLAYT 2: Seyyid Kutbeddin TÜRBESİ -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">1. Seyyid Kutbeddin Türbesi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <!-- SLAYT 2: İSA BABA -->
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">1. İsa Baba Türbesi</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div>
-                <p class="mb-4"><strong>Konum:</strong> İlkadım, Kökçüoğlu Mahallesi</p>
-                <p class="text-slate-700 leading-relaxed mb-4">İslam din alimi ve mücahitlerinden olan Seyyid Kutbeddin, İslam ordularıyla Bizans sınırına kadar gelmiş ve Samsun'a yerleşmiştir. </p>
-                <p class="text-slate-700"><strong>Özelliği:</strong> Kökçüoğlu (Seyyid Kutbeddin) Mezarlığı içerisinde yer alan türbe, halk tarafından şifa bulmak ve veli ziyareti için yoğun ilgi görmektedir.</p>
+                <p class="mb-4"><strong>Konum:</strong> İlkadım, Merkez Cedit Mahallesi</p>
+                <p class="text-slate-700 leading-relaxed mb-4">İsa Baba, 14. yüzyılda yaşamış bir denizci evliyadır. Samsun sahilinin manevi bekçisi olarak bilinir. Türbesi geçmişte deniz kıyısındayken, dolgu alanları sonrası içeride kalmıştır.</p>
+                <p class="text-slate-700"><strong>Özelliği:</strong> Denizcilerin fırtınalı havalarda İsa Baba'nın ışığını görerek karaya ulaştıklarına dair meşhur menkıbeleri vardır.</p>
             </div>
-            <div class="image-placeholder"><img src="https://i.imgur.com/ch23Lw2.jpeg" alt="Seyyid Kutbeddin Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
+            <div class="image-placeholder"><img src="https://imgur.com/BMWbIHe.png" alt="İsa Baba Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
         </div>
     </div>
 
     <!-- SLAYT 3: KILIÇDEDE -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">2. Kılıçdede Türbesi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">2. Kılıçdede Türbesi</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div class="image-placeholder"><img src="https://i.imgur.com/f28Oj8y.jpeg" alt="Kılıçdede Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
             <div>
                 <p class="mb-4"><strong>Konum:</strong> İlkadım, Kılıçdede Mahallesi</p>
@@ -107,9 +89,9 @@
     </div>
 
     <!-- SLAYT 4: HACI HATUN -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">3. Hacı Hatun</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">3. Hacı Hatun</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div>
                 <p class="mb-4"><strong>Konum:</strong> Pazar Mahallesi, İlkadım</p>
                 <p class="text-slate-700 leading-relaxed mb-4">Hacı Hatun, Osmanlı döneminin hayırsever hanımefendilerindendir. Şehir merkezindeki Hacı Hatun Camii'ni yaptıran zattır.</p>
@@ -120,22 +102,22 @@
     </div>
 
     <!-- SLAYT 5: LADİKLİ AHMET RUFAİ -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">4. Seyyid Ahmed-i Kebir (Ladikli Ahmet Rufai)</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
-            <div class="image-placeholder"><img src="https://i.imgur.com/CzCDdyL.png" alt="Rufai Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">4. Seyyid Ahmed-i Kebir (Ladikli Ahmet Rufai)</h2>
+        <div class="grid grid-cols-2 gap-8">
+            <div class="image-placeholder"><img src="https://i.imgur.com/CzCDdyL.png" alt="Rufai Türbesi" class="w-full h-full object-cover rounded-lg shadow-md">]</div>
             <div>
                 <p class="mb-4"><strong>Konum:</strong> Ladik İlçesi</p>
-                <p class="text-slate-700 leading-relaxed mb-4">Seyyid Ahmed-i Kebir, halk arasında **Ladikli Ahmet Rufai** olarak da bilinen, Rufai tarikatının bölgedeki en büyük temsilcisidir. Horasan kökenli olup Ladik bölgesini manevi olarak mayalayan zattır.</p>
+                <p class="text-slate-700 leading-relaxed mb-4"></p>Seyyid Ahmed-i Kebir, halk arasında **Ladikli Ahmet Rufai** olarak da bilinen, Rufai tarikatının bölgedeki en büyük temsilcisidir. Horasan kökenli olup Ladik bölgesini manevi olarak mayalayan zattır.</p>
                 <p class="text-slate-700"><strong>Özelliği:</strong> "Kebir" (Büyük) sıfatıyla anılması, onun hem ilmi hem de tasavvufi büyüklüğünü temsil eder. Ladik'teki türbesi bugün hala şehrin en önemli dua merkezlerinden biridir.</p>
             </div>
         </div>
     </div>
 
     <!-- SLAYT 6: BAFRA BATTAL SEYYİD EMİRZA -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">5. Battal Seyyid Emirza</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">5. Battal Seyyid Emirza</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div>
                 <p class="mb-4"><strong>Konum:</strong> Bafra, Türbe Köyü</p>
                 <p class="text-slate-700 leading-relaxed mb-4">Selçuklu dönemi komutanlarından olduğu düşünülür. İsmi "Battal" sıfatıyla anılır; kahramanlığı ve maneviyatı birleştirmiştir.</p>
@@ -146,22 +128,22 @@
     </div>
 
     <!-- SLAYT 7: SEYYİD ÖMER EFENDİ -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">6. Seyyid Ömer Efendi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">6. Seyyid Ömer Efendi</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div class="image-placeholder"><img src="https://i.imgur.com/e8kYGh1.png" alt="Seyyid Ömer Efendi Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
             <div>
                 <p class="mb-4"><strong>Konum:</strong> Çarşamba</p>
-                <p class="text-slate-700 leading-relaxed mb-4">Samsun'un Çarşamba ilçesinde, Karadeniz'e özgü ahşap mimarisiyle dikkat çeken bir yapıdır.Türbe, 1700'lü yıllarda yaşadığı düşünülen Seyyid Ömer Efendi'ye aittir ve son yıllarda betonarme olarak yeniden inşa edilmiştir.</p>
+                <p class="text-slate-700 leading-relaxed mb-4">Samsun'un Çarşamba ilçesinde, Karadeniz'e özgü ahşap mimarisiyle dikkat çeken bir yapıdır.Türbe, 1700'lü yıllarda yaşadığı düşünülen Seyyid Ömer Efendiye'ye aittir ve son yıllarda betonarme olarak yeniden inşa edilmiştir.</p>
                 <p class="text-slate-700"><strong>Özelliği:</strong> Rıza-i İlahi için ziyaret edildiğini ve şifa umuduyla dua edildiği belirtilmektedir..</p>
             </div>
         </div>
     </div>
 
     <!-- SLAYT 8: DEREKÖY TÜRBESİ -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">7. Dereköy Türbesi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">7. Dereköy Türbesi</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div>
                 <p class="mb-4"><strong>Konum:</strong> 19 Mayıs (Dereköy)</p>
                 <p class="text-slate-700 leading-relaxed mb-4">Dereköy mevkisinde bulunan bu türbe, bölgenin yerli dervişlerinden birine aittir. Karadeniz sahilindeki manevi noktalardan biridir.</p>
@@ -171,12 +153,12 @@
         </div>
     </div>
 
-    <!-- SLAYT 9: HORASANLI AHMET CEYLANİ -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">8. Horasanlı Ahmet Ceylani</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <!-- SLAYT 10: HORASANLI AHMET CEYLANİ -->
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">8. Horasanlı Ahmet Ceylani</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div>
-                <p class="mb-4"><strong>Konum:</strong> Atakum</p>
+                <p class="mb-4"><strong>Konum:</strong> Kavak</p>
                 <p class="text-slate-700 leading-relaxed mb-4">Horasan’dan Anadolu’ya gelen Alperenlerdendir. Abdülkadir Geylani hazretlerinin soyundan veya yolundan geldiği ifade edilir.</p>
                 <p class="text-slate-700"><strong>Özelliği:</strong> Atakum bölgesinin İslamlaşmasında öncü olmuş bir "Gönül Sultanı"dır.</p>
             </div>
@@ -184,10 +166,10 @@
         </div>
     </div>
 
-    <!-- SLAYT 10: TERME SEYYİD MAHMUT -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">9. Terme Seyyid Mahmut Türbesi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <!-- SLAYT 13: TERME SEYYİD MAHMUT -->
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">9. Terme Seyyid Mahmut Türbesi</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div class="image-placeholder"><img src="https://i.imgur.com/dQP6kob.png" alt="Terme Seyyid Mahmut Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
             <div>
                 <p class="mb-4"><strong>Konum:</strong> Terme</p>
@@ -197,51 +179,23 @@
         </div>
     </div>
 
-   <!-- SLAYT 11: İSA BABA -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">10. İsa Baba Türbesi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
-            <div>
-                <p class="mb-4"><strong>Konum:</strong> İlkadım, Merkez Cedit Mahallesi</p>
-                <p class="text-slate-700 leading-relaxed mb-4">İsa Baba, 14. yüzyılda yaşamış bir denizci evliyadır. Samsun sahilinin manevi bekçisi olarak bilinir. Türbesi geçmişte deniz kıyısındayken, dolgu alanları sonrası içeride kalmıştır.</p>
-                <p class="text-slate-700"><strong>Özelliği:</strong> Denizcilerin fırtınalı havalarda İsa Baba'nın ışığını görerek karaya ulaştıklarına dair meşhur menkıbeleri vardır.</p>
-            </div>
-            <div class="image-placeholder"><img src="https://imgur.com/BMWbIHe.png" alt="İsa Baba Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
-        </div>
-    </div>
-    
-
-    <!-- SLAYT 12: Seyyid Ahmed-i Kebir TÜRBESİ -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">11. Seyyid Zeynel Abidin Türbesi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
-            <div>
-                <p class="mb-4"><strong>Konum:</strong> Ladik, Ahmetsaray Köyü</p>
-                <p class="text-slate-700 leading-relaxed mb-4">Seyyid Ahmed-i Kebir’in kardeşi olan Seyyid Zeynel Abidin, bölgenin önde gelen Rufai temsilcilerinden biridir. Ahmet Saray Köyü Kümbetler mevkiinde metfundur. </p>
-                <p class="text-slate-700"><strong>Özelliği:</strong> Halk arasında felçli hastaların şifa bulmak ümidiyle ziyaret ettiği manevi bir makamdır.</p>
-            </div>
-            <div class="image-placeholder"><img src="https://i.imgur.com/5uLL10X.png" alt="Seyyid Kutbeddin Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
-        </div>
-    </div>
-
-        <!-- SLAYT 13: Şeyh Sadi TÜRBESi -->
-    <div class="slide p-5 md:p-12">
-        <h2 class="text-2xl md:text-3xl text-amber-800 mb-6 border-b pb-2">12. Şeyh Sadi Tekkesi, Halil Dede Türbesi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+    <!-- SLAYT 14: Seyyid Kutbeddin TÜRBESİ -->
+    <div class="slide p-12">
+        <h2 class="text-3xl text-amber-800 mb-6 border-b pb-2">10. Seyyid Kutbeddin Türbesi</h2>
+        <div class="grid grid-cols-2 gap-8">
             <div>
                 <p class="mb-4"><strong>Konum:</strong> İlkadım, Kökçüoğlu Mahallesi</p>
-                <p class="text-slate-700 leading-relaxed mb-4">
-                            Sadi Tekkesi, Milli Mücadele yıllarında Erzurum ve Sivas Kongreleri sonrası seçilen Heyeti Temsiliye ile İngiliz baskısına rağmen gizli haberleşmelerin yürütüldüğü merkezdir. </p>
-                <p class="text-slate-700"><strong>Özelliği:</strong> Samsun Müdafaa-i Hukuk Cemiyeti'nin toplantıları, Tekke Şeyhi Halil Oğlu Şeyh Hacı Mehmet Mehdi Efendi ev sahipliğinde burada yapılmıştır..</p>
+                <p class="text-slate-700 leading-relaxed mb-4">İslam din alimi ve mücahitlerinden olan Seyyid Kutbeddin, İslam ordularıyla Bizans sınırına kadar gelmiş ve Samsun'a yerleşmiştir. </p>
+                <p class="text-slate-700"><strong>Özelliği:</strong> Kökçüoğlu (Seyyid Kutbeddin) Mezarlığı içerisinde yer alan türbe, halk tarafından şifa bulmak ve veli ziyareti için yoğun ilgi görmektedir.</p>
             </div>
-            <div class="image-placeholder"><img src="https://i.imgur.com/lCHVswJ.png" alt="Seyyid Kutbeddin Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
+            <div class="image-placeholder"><img src="https://i.imgur.com/ch23Lw2.jpeg" alt="Seyyid Kutbeddin Türbesi" class="w-full h-full object-cover rounded-lg shadow-md"></div>
         </div>
     </div>
 
-    <!-- SLAYT 14: SON -->
-    <div class="slide p-6 md:p-16 flex items-center justify-center text-center">
+    <!-- SLAYT 15: SON -->
+    <div class="slide p-16 flex items-center justify-center text-center">
         <div>
-            <h2 class="text-3xl md:text-4xl text-slate-800 mb-6">Teşekkür Ederiz</h2>
+            <h2 class="text-4xl text-slate-800 mb-6">Teşekkür Ederiz</h2>
             <div class="w-16 h-1 bg-amber-600 mx-auto mb-6"></div>
             <p class="text-lg text-slate-600">Samsun'un manevi mirasına sahip çıkmak, geleceğimize sahip çıkmaktır.</p>
         </div>
